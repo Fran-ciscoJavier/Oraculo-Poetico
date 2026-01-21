@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oráculo de Versos</title>
+    <link rel="stylesheet" href="estetica.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <div id="inicio" class="pantalla activa">
+            <h1>El Oráculo Poético</h1>
+            <p>¿Qué emoción buscas hoy?</p>
+            <button class="btn-oracle" onclick="revelarDestino('melancolia', '#2c3e50')">Melancolía</button>
+            <button class="btn-oracle" onclick="revelarDestino('amor', '#4d1b1b')">Amor</button>
+            <button class="btn-oracle" onclick="revelarDestino('esperanza', '#1b4d3e')">Esperanza</button>
+            <button class="btn-oracle" onclick="revelarDestino('misterio', '#2c1a36')">Misterio</button>
+<button class="btn-oracle" onclick="revelarDestino('rebeldia', '#5e0b0b')">Rebeldía</button>
+
+        </div>
+
+        <div id="resultado" class="pantalla">
+            <div id="poema-contenido" class="texto-poema"></div>
+            <button class="volver" onclick="irAInicio()">Volver a consultar</button>
+        </div>
+    </div>
+
+    <script src="Java.js"></script>
+</body>
+</html>
